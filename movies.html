@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🎬 Movie Explorer</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="search.html">Search</a>
+    <a href="booking.html">Book</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<h1 class="title">Movies</h1>
+
+<div class="container">
+
+  <div class="card" onclick="showDetails('Inception','Sci-fi thriller')">
+    <img src="https://via.placeholder.com/200x250">
+    <h3>Inception</h3>
+    <button onclick="goToBooking(event)">Book</button>
+  </div>
+
+  <div class="card" onclick="showDetails('Avengers','Superhero action')">
+    <img src="https://via.placeholder.com/200x250">
+    <h3>Avengers</h3>
+    <button onclick="goToBooking(event)">Book</button>
+  </div>
+
+  <div class="card" onclick="showDetails('Interstellar','Space drama')">
+    <img src="https://via.placeholder.com/200x250">
+    <h3>Interstellar</h3>
+    <button onclick="goToBooking(event)">Book</button>
+  </div>
+<div class="card" onclick="showDetails('Varanasi','A spiritual journey movie')">
+  <img src="https://via.placeholder.com/200x250">
+  <h3>Varanasi</h3>
+
+  <button onclick="openTrailerBtn(event,'https://www.youtube.com/embed/VIDEO_ID')">
+    ▶ Glimpse
+  </button>
+
+  <button onclick="goToBooking(event)">Book</button>
+</div>
+</div>
+
+<div id="details"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
